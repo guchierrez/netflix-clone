@@ -96,7 +96,7 @@ div.footer > span {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  outline: solid rgb(104, 94, 94) 3px;
+  outline: solid rgb(104, 94, 94) 1px;
   width: 200px;
   height: 30px;
   align-items: center;
@@ -104,15 +104,15 @@ div.footer > span {
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 170px;
+  background: none;
+  border: none;
+  color: rgb(104, 94, 94);
 }
 
 .profile-manager:hover {
-  outline: solid rgb(255, 248, 248);
-  cursor: pointer;
-}
-
-p:hover {
   color: rgb(255, 248, 248);
+  outline: solid rgb(255, 248, 248) 1px;
+  cursor: pointer;
 }
 
 .footer {
