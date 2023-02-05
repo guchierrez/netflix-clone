@@ -12,13 +12,18 @@
   }
 
   body .user img {
-    max-width: 20vh;
+    max-width: 18vh;
+    margin: 0 auto;
   }
 
   body header {
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  body .profiles {
+    max-width: 400px;
   }
 }
 
@@ -63,7 +68,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
