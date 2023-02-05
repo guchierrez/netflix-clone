@@ -1,127 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  margin-bottom: 0;
+@media only screen and (max-width: 850px) {
+  body header {
+    margin-top: 0px;
+  }
+
+  body .user img {
+    max-width: 20vh;
+  }
 }
 
-main {
-  background-color: rgb(31, 30, 30);
-  min-height: 100vh;
-  padding-bottom: 40px;
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 29, 29);
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: 0.4s;
 }
 
 header {
-  font-family: "Bebas Neue", cursive;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: red;
-  padding: 10px;
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+header p {
+  font-family: "Bebas Neue", sans-serif;
+  color: blue;
+  font-size: 46px;
+  letter-spacing: 2px;
 }
 
 h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 42px;
-  font-size: 4vw;
-  font-weight: 600;
-  color: rgb(255, 248, 248);
+  font-family: "Roboto Condensed";
+  color: aliceblue;
+  font-size: 46px;
+  font-weight: 300;
   text-align: center;
-  margin-right: 60px;
-  margin-left: 60px;
   margin-bottom: 30px;
-  white-space: nowrap;
 }
 
-img {
-  max-width: 150px;
-  width: 20vw;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.profile-images {
-  border-radius: 4px 4px 2px;
-}
-
-.misc-images.gatinho {
-  width: 40px;
-  height: 40px;
-}
-
-span {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(104, 94, 94);
+.profiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .user {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  text-align: center;
+  margin-right: 20px;
 }
 
-.profiles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  position: relative;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 100px;
+.user img {
+  max-width: 160px;
+  margin-bottom: 10px;
+  border-radius: 3px 3px 3px;
 }
 
-a > img {
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  position: relative;
+.user img:hover {
+  outline: solid aliceblue 2px;
 }
 
-p,
-div.footer > span {
-  color: rgb(104, 94, 94);
-  font-family: "Raleway", sans-serif;
+.user span {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(82, 82, 82);
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.profile-manager {
+button {
   display: flex;
   justify-content: center;
+  margin: auto;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  outline: solid rgb(104, 94, 94) 1px;
-  width: 200px;
-  height: 30px;
+  text-align: center;
   align-items: center;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 170px;
   background: none;
   border: none;
-  color: rgb(104, 94, 94);
+  color: rgb(82, 82, 82);
+  outline: solid rgb(82, 82, 82) 2px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
 }
 
-.profile-manager:hover {
-  color: rgb(255, 248, 248);
-  outline: solid rgb(255, 248, 248) 1px;
-  cursor: pointer;
+button:hover {
+  color: aliceblue;
+  outline: solid aliceblue 2px;
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 0vh;
+  margin: auto;
 }
 
-.profile-images:hover {
-  outline: solid rgb(255, 248, 248) 3px;
+footer img {
+  width: 30px;
+  margin-left: 15px;
+}
+
+footer img.gatinho {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 25px;
 }
