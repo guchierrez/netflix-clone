@@ -76,6 +76,7 @@ h1 {
 
 .user img:hover {
   outline: solid aliceblue 2px;
+  cursor: pointer;
 }
 
 .user span {
@@ -106,6 +107,7 @@ button {
 button:hover {
   color: aliceblue;
   outline: solid aliceblue 2px;
+  cursor: pointer;
 }
 
 footer {
